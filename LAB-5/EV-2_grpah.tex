@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{
+    shapes.geometric,
+    shapes.misc,
+    arrows.meta,
+    positioning,
+    fit,
+    backgrounds
+}
+\title{Graph}
+\author{Argho Ghosh}
+\date{October 12, 2026}
+\begin{document}
+\maketitle
+\begin{center}
+    \begin{tikzpicture}
+        \tikzset{
+            vertex/.style={
+                circle,
+                draw,
+                thick,
+                fill=blue!20,
+                minimum size=1cm
+            }
+        }
+        \node[vertex] (A) at (0,2) {\textbf{A}};
+        \node[vertex] (B) at (2,3) {\textbf{B}};
+        \node[vertex] (C) at (2,1) {\textbf{C}};
+        \node[vertex] (D) at (4,3) {\textbf{D}};
+        \node[vertex] (E) at (4,1) {\textbf{E}};
+        \node[vertex] (F) at (6,2) {\textbf{F}};
+
+        \draw[red,dashed] (A) -- node[midway,fill=white] {4} (B);
+        \draw (B) -- node[midway,fill=white] {5} (D);
+        \draw (D) -- node[midway,fill=white] {6} (F);
+        \draw (F) -- node[midway,fill=white] {3} (E);
+        \draw (E) -- node[midway,fill=white] {9} (C);
+        \draw (C) -- node[midway,fill=white] {2} (A);
+        \draw (B) -- node[midway,fill=white] {1} (C);
+        \draw (D) -- node[midway,fill=white] {2} (E);
+    \end{tikzpicture}
+\end{center}
+\end{document}
