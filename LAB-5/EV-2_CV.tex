@@ -1,0 +1,129 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue
+}
+
+\setlist[itemize]{
+    leftmargin=*,
+    noitemsep,
+    topsep=2pt
+}
+
+\pagestyle{empty}
+
+\titleformat{\section}
+{\large\bfseries}
+{}
+{0em}
+{}
+[\titlerule]
+
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\newcommand{\cventry}[4]{
+    \noindent
+    \textbf{#1}\hfill #2\\
+    \textit{#3}\\
+    #4
+    \vspace{3pt}
+}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE\bfseries Lionel Messi}\\[4pt]
+    Dhaka, Bangladesh \textbar\
+    +880 1700 000000 \textbar\
+    \href{mailto:lionel.messi@example.com}
+    {lionel.messi@example.com}\\[3pt]
+
+    \href{https://github.com/messi}{GitHub}
+    \textbar\
+    \href{https://linkedin.com/in/messi}{LinkedIn}
+\end{center}
+
+\section*{PROFILE}
+
+Final-year Computer Science student with a strong
+interest in algorithms, graph theory, and software
+engineering. Seeking an entry-level developer role.
+
+\section*{EDUCATION}
+
+\cventry
+{BSc in Computer Science and Engineering}
+{2021--2025}
+{Example University}
+{CGPA: 3.72/4.00}
+
+\cventry
+{Higher Secondary Certificate (Science)}
+{2019--2021}
+{Example College}
+{GPA: 5.00/5.00}
+
+\section*{EXPERIENCE}
+
+\cventry
+{Software Engineering Intern, TechNova Ltd.}
+{Jun 2024 -- Aug 2024}
+{Dhaka}
+{}
+
+\begin{itemize}
+    \item Built REST API endpoints using Python (Flask)
+    for a mobile application.
+    \item Reduced average query time by 30\% by
+    optimizing SQL indexes.
+\end{itemize}
+
+\section*{PROJECTS}
+\begin{itemize}
+    \item \textbf{Campus Navigation App:}
+    shortest-path routing using Dijkstra’s algorithm (C++).
+    \item \textbf{Library Management System:}
+    full-stack web application (Python, SQL).
+\end{itemize}
+\section*{SKILLS}
+\begin{center}
+\begin{tabular}{lc}
+% \centering
+    \toprule
+    \textbf{Skill} & \textbf{Level} \\
+    \midrule
+    Python &\textbullet\ \textbullet\ \textbullet\ \textbullet\ \textbullet \\
+    C++ & \textbullet\ \textbullet\ \textbullet\ \textbullet\ $\circ$ \\
+    SQL & \textbullet\ \textbullet\ \textbullet\ \textbullet\ $\circ$ \\
+    \LaTeX & \textbullet\ \textbullet\ \textbullet\
+    \textbullet\ $\circ$ \\
+    Git & \textbullet\ \textbullet\ \textbullet\
+    $\circ$\ $\circ$ \\
+    \bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Web Technologies:} HTML, CSS\\
+\textbf{Core Concepts:} Data Structures, Algorithms,
+Graph Theory\\
+\textbf{Tools:} Git, GitHub, \LaTeX
+
+\section*{LANGUAGES}
+English, Bengali
+\section*{AWARDS}
+\cventry
+{Dean’s List}
+{2023 and 2024}
+{2nd place}
+{University Programming Contest 2024}
+
+\end{document}
