@@ -1,0 +1,148 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue
+}
+
+\setlist[itemize]{
+    leftmargin=*,
+    noitemsep,
+    topsep=2pt
+}
+
+\pagestyle{empty}
+
+\titleformat{\section}
+{\large\bfseries}
+{}
+{0em}
+{}
+[\titlerule]
+
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\newcommand{\cventry}[4]{
+    \noindent
+    \textbf{#1}\hfill #2\\
+    \textit{#3}\\
+    #4
+    \vspace{3pt}
+}
+
+
+\begin{document}
+% \begin{center}
+%     {\LARGE\bfseries Rahman Chowdhury}\\[4pt]
+%     Dhaka, Bangladesh \textbar\
+%     +880 1700-000000 \textbar\
+%     \href{mailto:rahman@example.com}
+%     {rahman@example.com}\\[3pt]
+%     \href{https://github.com/rc}{GitHub}
+%     \textbar\
+%     \href{https://linkedin.com/in/rc}{LinkedIn}
+% \end{center}
+\begin{center}
+   {\LARGE\bfseries Rahman Chowdhury}\\[4pt]
+    Dhaka, Bangladesh \textbar\
+    +880 1610328503  \textbar\
+    \href{mailto:rahman@example.com}
+    {rahman@example.com}\\[3pt]
+
+    \href{https://github.com/arghoghosh88}{GitHub}
+    \textbar\
+    \href{www.linkedin.com/in/argho-ghosh-10b403312}{LinkedIn}
+\end{center}
+
+\section*{PROFILE}
+
+Final-year Computer Science and Engineering student interested
+in software engineering and data visualisation. Passionate about
+developing practical software solutions and learning new technologies.
+
+\section*{EDUCATION}
+
+\cventry
+{B.Sc. in Computer Science and Engineering}
+{2021--2025}
+{Bangladesh University of Business and Technology}
+{CGPA: 3.73/4.00}
+
+\cventry
+{Higher Secondary Certificate (HSC)}
+{2018--2020}
+{Khulna Public College}
+{GPA: 5.00/5.00}
+
+\section*{EXPERIENCE}
+
+\cventry
+{Software Engineering Intern}
+{Jun--Sep 2024}
+{BrightLine Labs, Dhaka}
+{}
+
+\begin{itemize}
+    \item Developed REST API endpoints.
+    \item Wrote unit tests to improve code quality.
+    \item Fixed user interface bugs.
+\end{itemize}
+
+\cventry
+{Teaching Assistant, CSE 115}
+{Jan--May 2024}
+{Bangladesh University of Business and Technology}
+{}
+\begin{itemize}
+    \item Assisted students with programming concepts.
+    \item Helped students understand laboratory exercises.
+\end{itemize}
+
+\section*{PROJECTS}
+\begin{itemize}
+    \item \textbf{Library Management System:}
+    Developed a system to manage books and library records.
+    \item \textbf{Campus Route Planner:}
+    Created a tool to find routes between university locations.
+    \item \textbf{Weather Dashboard:}
+    Designed a dashboard to display weather information.
+\end{itemize}
+
+\section*{SKILLS}
+\begin{center}
+\begin{tabular}{lc}
+    \toprule
+    \textbf{Skill} & \textbf{Level} \\
+    \midrule
+    Python &\textbullet\ \textbullet\ \textbullet\ \textbullet\ \textbullet \\
+    \LaTeX & \textbullet\ \textbullet\ \textbullet\
+    \textbullet\ $\circ$ \\
+    C++ & \textbullet\ \textbullet\ \textbullet\ \textbullet\ $\circ$ \\
+    SQL & \textbullet\ \textbullet\ \textbullet\ $\circ$\ $\circ$ \\
+    Git & \textbullet\ \textbullet\ \textbullet\ \textbullet\
+    $\circ$\\
+    Docker & \textbullet\ \textbullet\ $\circ$\ $\circ$\
+    $\circ$\\
+    \bottomrule
+\end{tabular}
+\end{center}
+\section*{LANGUAGES}
+
+Bangla (Native), English (Fluent), Hindi (Basic).
+
+\section*{AWARDS}
+
+\begin{itemize}
+    \item  Ranked 8th out of 72 teams at BIUPC 2026 with Team 404 Brain Not Found
+    \item Ranked 20th in the Bengali NLP Safety Challenge 2026
+\end{itemize}
+
+\end{document}
