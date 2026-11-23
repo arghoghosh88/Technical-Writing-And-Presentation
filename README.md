@@ -17,11 +17,11 @@ The repository is organized into separate folders for different laboratory tasks
 
 | Folder | Description |
 |---|---|
-| `LAB-1` | Laboratory Assignment 1 |
-| `LAB-2` | Laboratory Assignment 2 |
-| `Lab-3` | Laboratory Assignment 3 |
-| `Lab-4` | Laboratory Assignment 4 |
-| `LAB-5` | Laboratory Assignment 5 |
+| `LAB-1` | Assignment 1 |
+| `LAB-2` | Assignment 2 |
+| `Lab-3` | Assignment 3 |
+| `Lab-4` | Assignment 4 |
+| `LAB-5` | Assignment 5 |
 
 **Note:** More folders and resources will be added as new assignments and activities are completed.
 
@@ -66,6 +66,8 @@ Stay tuned for future updates!
 ## 📖 Course
 
 **Subject:** Technical Writing and Presentation
+
+**Course Code:** CSE-301
 
 **Purpose:** Academic Coursework and Learning Portfolio
 
